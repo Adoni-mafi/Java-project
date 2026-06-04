@@ -224,7 +224,9 @@ binary mode=b"""
 #convert python file to exe(using py installer(it's a module))
 #mini python project
 #qr code genrator
+
 #first we need to create venv enviroment then in that enviroment we must to install pip install qr code. after that we improt the library
+# how QR CODE  generate using python programming
 import qrcode
 data = input('Enter the text or URl: ').strip()
 filename = input('Enter the filename: ').strip()
