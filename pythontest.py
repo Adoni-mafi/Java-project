@@ -185,23 +185,54 @@
 #     else:
 #         print('Invalid choice!')
 #create a youtube class and accept channel name from the user and print the country of the channel 
-user=input('ENTER CHANNEL NAME')
-data={'geez tech':'ethiopia','mosh':'united state'}
-class Youtube:
-    def __init__(Self,countryName):
-        Self.countryName=countryName
-    def cout (Self):
-        for i in data:
-            if Self.countryName==i:
-                print('Accepted')
-            else:
-                print("didn't accepted")           
-y=Youtube(user.lower())#used to change the user input into lower case
-y.cout()
+# user=input('ENTER CHANNEL NAME')
+# data={'geez tech':'ethiopia','mosh':'united state'}
+# class Youtube:
+#     def __init__(Self,countryName):
+#         Self.countryName=countryName
+#     def cout (Self):
+#         for i in data:
+#             if Self.countryName==i:
+#                 print('Accepted')
+#             else:
+#                 print("didn't accepted")           
+# y=Youtube(user.lower())#used to change the user input into lower case
+# y.cout()
 #number gussing game
  
 #file handling program in python
+#python file handling (file input and output )
+"""var=open("filename or filepath ",mode)
+modes:
+write =w
+read=r
+append=a
+create=x
+text mode=t
+binary mode=b"""
+#write a program that can create and write "This is My file"text
+# f=open("E:\Desktop\python\MyData.txt",'w')
+# f.write("This is My file")
+# f.close()
+#to read the file 
+# fr=open("E:\Desktop\python\MyData.txt",'r')
+# print(fr.read())
+#write a program that can delete the file if it exist
+# import os
+# os.remove('"E:\Desktop\python\MyData.txt"')
 
+#convert python file to exe(using py installer(it's a module))
+#mini python project
+#qr code genrator
+#first we need to create venv enviroment then in that enviroment we must to install pip install qr code. after that we improt the library
+import qrcode
+data = input('Enter the text or URl: ').strip()
+filename = input('Enter the filename: ').strip()
+qr = qrcode.QRCode(box_size=10, border=4)
+qr.add_data(data)
+image = qr.make_image(fill_color='black', back_color="white")
+image.save(filename)
+print(f'QR code saved as {filename} ')
 
 
 
