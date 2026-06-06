@@ -21,6 +21,7 @@ while True:
     computer_choice = random.choice(choices).lower()
     print("Computer is : " ,computer_choice)
     print("I Choose : ", user_input)
+    
     if user_input == computer_choice:
        print ("Let's Try Another Game")
     elif (user_input == 'r' and computer_choice =='s')or \
@@ -29,9 +30,10 @@ while True:
          print ('You Win!!')
     else:
         print('You Loss!!')
+   
     should_continue = input('continue? (y/n): ').lower()
     if should_continue =='n':
         break
 
-
     
+
